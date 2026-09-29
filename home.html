@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthdayyy</title>
+  <script src="auth.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="ambient" aria-hidden="true"></div>
+  <canvas id="stars" aria-hidden="true"></canvas>
+
+  <div class="moon-wrap" aria-label="Moon — click to reveal the stars">
+    <div class="moon-inner">
+      <div class="moon-glow" aria-hidden="true"></div>
+      <img src="moon.png" alt="" class="moon" width="800" height="800" draggable="false" tabindex="0" />
+    </div>
+  </div>
+
+  <main class="page">
+    <section class="hero reveal">
+      <p class="eyebrow">May 27 · A night made for you</p>
+      <h1 class="title">Happy Birthdayyyy</h1>
+      <p class="lead">
+        I am a developer ya3ny faaa this is my gift for youuu <br>
+        before of anything, I know this is not that professional but I tried my best ya3ny still learning
+
+      </p>
+      <a class="scroll-hint" href="#message">Explore your gift ↓</a>
+    </section>
+
+    <section id="message" class="section message reveal">
+      <h2 class="section-title">A note just for you</h2>
+      <div class="letter-wrap">
+        <img src="pink flower.png" alt="" class="lily lily-tl" aria-hidden="true" draggable="false" />
+        <img src="pink flower.png" alt="" class="lily lily-tr" aria-hidden="true" draggable="false" />
+        <img src="pink flower.png" alt="" class="lily lily-bl" aria-hidden="true" draggable="false" />
+        <img src="pink flower.png" alt="" class="lily lily-br" aria-hidden="true" draggable="false" />
+        <img src="pink flower.png" alt="" class="lily lily-left" aria-hidden="true" draggable="false" />
+        <img src="pink flower.png" alt="" class="lily lily-right" aria-hidden="true" draggable="false" />
+      <div class="letter">
+        <p>Dear,</p>
+        <p>
+          Tayeb, first of all i am not that good at expressing my feelings through words, bas Kol Sana Wente Tayebaaa I know We don't talk, but u mean much to me<br>
+          and i guess you know that already, fa make sure to enjoy your dayyy and don't forget to smileeee
+        </p>
+        <p>
+          btw, if you have ever wondered why did i get attached to you that quick and without conversation..
+        </p>
+        <p>
+          The story is, at the beggining of 2025 i ve dreamed of you without knowing you exist and u showed up in my dreams<br>
+          for like 5 days in a row with everytime we go somewhere different and experience different adventures together<br>
+          so since then i ve been looking and waiting for you patiently to show up<br>
+          31/12/2025 first time i saw u, u wasnt that clear for me to see but somehow i felt a strange feeling in my chest<br>
+          and i didnt know what is going on, then the next one i had that feeling that here is the one u have been looking for<br>
+          btw, in these dreams ur name wasnt that clear but i knew that it had "r" and "n" in it, these are other things that made<br>
+          me more sure that u r that girl from my dreams<br>
+          i know that this story sounds strange and hard to beleive bas wallahe kol kelma i ve said 7a2i2a W rabena shahed 3alaya<br>
+          And since when u refused to talk then i ve made a promise to myself that i'll do my best to be able to meet you<br>
+          in person and tell you the full story ✦<br>
+          so, I hope this year treats you gently. I hope you find happiness in every place you go<br>
+          I hope your heart feels lighter, your mind quieter, and your dreams a little closer than they were yesterday.
+        </p>
+        <p class="sign-off">With love,<br />Someone who is glad you exist ✦</p>
+      </div>
+      </div>
+    </section>
+
+    <section class="section interact reveal">
+      <h2 class="section-title">Make a wish</h2>
+      <p class="section-desc">Click the moon first — the stars need to be out.</p>
+      <button type="button" id="wish-btn" class="wish-btn" disabled>Make a wish ✦</button>
+      <p id="wish-result" class="wish-result" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+  <script src="home.js"></script>
+</body>
+</html>

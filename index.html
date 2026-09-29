@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Enter Password</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="lock.css" />
+</head>
+<body>
+  <div class="lock">
+    <div class="lock-icon" aria-hidden="true">✦</div>
+    <h1 class="lock-title">Private access</h1>
+    <p class="lock-sub">Enter password to continue<br>
+                        wanna rewrite the ... ?</p>
+
+    <form id="lock-form" class="lock-form" autocomplete="off">
+      <input
+        id="password"
+        class="lock-input"
+        type="password"
+        name="password"
+        placeholder="Password"
+        required
+        autofocus
+      />
+      <button type="submit" class="lock-btn">Unlock</button>
+      <p id="lock-error" class="lock-error" role="alert"></p>
+    </form>
+  </div>
+
+  <script src="lock.js"></script>
+</body>
+</html>
